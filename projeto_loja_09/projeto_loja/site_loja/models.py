@@ -17,5 +17,3 @@ class Perfil(models.Model):
             output_size = (300, 300)
             img.thumbnail(output_size) # Redimensiona a imagem
             img.save(self.imagem.path) # Salva a imagem redimensionada
-
-# Create your models here.
