@@ -1,0 +1,31 @@
+Tabela; USER
+
+Tabela: perfil
+
+#USER (Usuario)
+    foto
+    email
+    cpf
+    tel_fixo
+    tel_celular
+    dt_nasciento
+    genero
+    desafio_pergunta
+    desafio_responta
+
+    Aplicaçãoes :noticias
+
+
+    Tabela; comentario
+        USER
+        noticias
+        conteudo
+        status
+
+    Tabela:produtos 
+
+        tag 
+        desscrição
+        comentarios
+        itens inclusos
+        status
