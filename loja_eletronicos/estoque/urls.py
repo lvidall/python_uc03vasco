@@ -16,10 +16,16 @@ urlpatterns = [
     # Produtos
     ##
     path('produtos/', views.ProdutoListView.as_view(), name='produto_list'),
-    path('produtos/listar/', views.ProdutoTabelaListView.as_view(), name='produto_tabela_list'),
+
+    path('produtos/listar/', views.ProdutoTabelaListView.as_view(),
+     name='produto_tabela_list'),
+
     path('produtos/<int:pk>/', views.ProdutoDetailView.as_view(), name='produto_detail'),
+
     path('produtos/novo/', views.ProdutoCreateView.as_view(), name='produto_create'),
+
     path('produtos/<int:pk>/editar/', views.ProdutoUpdateView.as_view(), name='produto_update'),
+    
     path('produtos/<int:pk>/deletar/', views.ProdutoDeleteView.as_view(), name='produto_delete'),
 
 ]

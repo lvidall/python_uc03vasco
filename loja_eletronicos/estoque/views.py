@@ -56,7 +56,7 @@ class ProdutoTabelaListView(ListView):
 # READ (Detail)
 class ProdutoDetailView(DetailView):
     model = Produto
-    template_name = 'estoque/produto_detail.html'
+    template_name = 'estoque/produto_detail_v2.html'
     context_object_name = 'produto'
 
 # CREATE
