@@ -23,10 +23,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'widget_tweaks',
+
+    'crispy_forms',
     
-    'crispy_forms'
-    
-    'crispy_bootstra5'
+    'crispy_bootstrap5',
 
     'blog',
     'estoque',
@@ -93,6 +93,9 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+CRISPY_ALLOWED_TEMPLA_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "boostrap5"
 
 
 # Internationalization
